@@ -18,7 +18,7 @@
       <% @votes.each do |vote| %>
       <tr>
         <td><%= vote.user.username %></td>
-        <td><%= vote.photo_id %></td>
+        <td><%= vote.photo.created_at %></td>
         <td><%= vote.test_boolean %></td>
         <td>
           <a href="/votes/<%= vote.id %>" class="btn btn-primary">Show</a>
